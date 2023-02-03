@@ -2,9 +2,11 @@
 
 [![REUSE status](https://api.reuse.software/badge/github.com/open-component-model/homebrew-tap)](https://api.reuse.software/info/github.com/open-component-model/homebrew-tap)
 
-...
-<other-README-content>
-...
+Installation instructions:
+
+`brew tap open-component-model/homebrew-tap`
+
+`brew install ocm`
 
 ## Licensing
 
