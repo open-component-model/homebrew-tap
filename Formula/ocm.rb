@@ -5,20 +5,20 @@
 class Ocm < Formula
   desc "The OCM CLI makes it easy to create component versions and embed them in build processes."
   homepage "https://ocm.software/"
-  version "0.3.0-rc.1"
+  version "0.3.0-rc.2"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.1/ocm-0.3.0-rc.1-darwin-amd64.tar.gz"
-      sha256 "aadb80a34cb161a3a4120e424f449210f450c63e5f08a81617e6b4035e60cd22"
+    if Hardware::CPU.arm?
+      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.2/ocm-0.3.0-rc.2-darwin-arm64.tar.gz"
+      sha256 "22a727fbf1f9f954d0b74a1634f2aa79d9f7402c93587750c4cecc448220898c"
 
       def install
         bin.install "ocm"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.1/ocm-0.3.0-rc.1-darwin-arm64.tar.gz"
-      sha256 "6df8414128c10642b002178107fee4b3f8440fccc78e04fd43aa98b1e8259476"
+    if Hardware::CPU.intel?
+      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.2/ocm-0.3.0-rc.2-darwin-amd64.tar.gz"
+      sha256 "e1bb5554be36901d1c77692b7d6fc5b428c64a11d022f677faa6289234cdce57"
 
       def install
         bin.install "ocm"
@@ -28,16 +28,16 @@ class Ocm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.1/ocm-0.3.0-rc.1-linux-arm64.tar.gz"
-      sha256 "aadee5e3d1b86fc2d8378aeea86adc3887a24276a38549e68e80912aa5acc8f7"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.2/ocm-0.3.0-rc.2-linux-arm64.tar.gz"
+      sha256 "88d781ec6d377ab7809f8d4e85e95f9d763463ac999c5d8b22faf65104b7c86d"
 
       def install
         bin.install "ocm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.1/ocm-0.3.0-rc.1-linux-amd64.tar.gz"
-      sha256 "f3ce6cae9c051e4b12ec30dec21eb0934c1f19fe04eb8c7c27c608255be5dab2"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.3.0-rc.2/ocm-0.3.0-rc.2-linux-amd64.tar.gz"
+      sha256 "84c2497446fab01ae060914face66eb5278bd120eb56f5be4dc26087e32cba9b"
 
       def install
         bin.install "ocm"
