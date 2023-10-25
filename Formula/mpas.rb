@@ -5,12 +5,12 @@
 class Mpas < Formula
   desc "Mpas CLI"
   homepage ""
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.4.0/mpas_0.4.0_darwin_amd64.tar.gz"
-      sha256 "c8c1671bffada5f3bff6ec229e5e2336c111c20b8770827304b391f3a3ad6ad0"
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.5.0/mpas_0.5.0_darwin_amd64.tar.gz"
+      sha256 "819a1108a88e849667cb95eac427e9fc256f6329d6ccc32ae9436353b4b81520"
 
       def install
         bin.install "mpas"
@@ -19,8 +19,8 @@ class Mpas < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.4.0/mpas_0.4.0_darwin_arm64.tar.gz"
-      sha256 "c7710a913ae8a645b4bc5c357fc70a27968af04da712e4b424f8ed4082b52580"
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.5.0/mpas_0.5.0_darwin_arm64.tar.gz"
+      sha256 "0c0cb69360125266235de27310690968c133586487a8cb45806ddd37a6f87524"
 
       def install
         bin.install "mpas"
@@ -32,8 +32,8 @@ class Mpas < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.4.0/mpas_0.4.0_linux_amd64.tar.gz"
-      sha256 "0804c390f936a5cd953de45accc171cedfa1a9c254c8bfe072a47a9b803bbd17"
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.5.0/mpas_0.5.0_linux_amd64.tar.gz"
+      sha256 "ec5553be753d022479dca06c5fe5b5bf6fa04ebc83c32c6f4545e505a0585f35"
 
       def install
         bin.install "mpas"
@@ -42,8 +42,8 @@ class Mpas < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.4.0/mpas_0.4.0_linux_arm64.tar.gz"
-      sha256 "5060a483ea240a8b786b380650079397526cebeff27052805d486dd841a5b55e"
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.5.0/mpas_0.5.0_linux_arm64.tar.gz"
+      sha256 "b730b9e7c8f3fcc23b5cd125a8cb45a0809941393452acfdb9ec5355ac0e9a7f"
 
       def install
         bin.install "mpas"
