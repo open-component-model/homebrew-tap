@@ -5,12 +5,12 @@
 class Mpas < Formula
   desc "Mpas CLI"
   homepage ""
-  version "0.6.2"
+  version "0.6.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.2/mpas_0.6.2_darwin_arm64.tar.gz"
-      sha256 "20ad5e4bf1610b0ac0b1142ce040207ac46c827c242a0fbd70819288354b0dda"
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.3/mpas_0.6.3_darwin_arm64.tar.gz"
+      sha256 "10349e9af01772e6e1b8e6036cc62e039f671ca8ac18930b70e125cf00800029"
 
       def install
         bin.install "mpas"
@@ -19,8 +19,8 @@ class Mpas < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.2/mpas_0.6.2_darwin_amd64.tar.gz"
-      sha256 "65c0c808841215155df75986b21539b0458d94aa7c88baa0873259c2035199da"
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.3/mpas_0.6.3_darwin_amd64.tar.gz"
+      sha256 "6d242e34a3f5563f7d5651a35277144dbdd92e9a25047ea8fd2ea816df05c107"
 
       def install
         bin.install "mpas"
@@ -31,9 +31,9 @@ class Mpas < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.2/mpas_0.6.2_linux_amd64.tar.gz"
-      sha256 "81f2e5023941dde6c66d08520d01b0f4f7c662507a0b6e9e2993d7924aa178db"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.3/mpas_0.6.3_linux_arm64.tar.gz"
+      sha256 "d3e708587c96326c30f0b820a3c9096b59e468dae88720faf90bfe7e8c0cf728"
 
       def install
         bin.install "mpas"
@@ -41,9 +41,9 @@ class Mpas < Formula
         generate_completions_from_executable(bin/"mpas", "completion")
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.2/mpas_0.6.2_linux_arm64.tar.gz"
-      sha256 "41d6dbe76645df07c1096188fa60944473fa391de7d3e8eff08c24c6496dcc30"
+    if Hardware::CPU.intel?
+      url "https://github.com/open-component-model/MPAS/releases/download/v0.6.3/mpas_0.6.3_linux_amd64.tar.gz"
+      sha256 "56394690b8f70311dec9c640ae84639397d86b93bfd14e1663336a98d243d221"
 
       def install
         bin.install "mpas"
