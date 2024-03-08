@@ -5,20 +5,20 @@
 class Ocm < Formula
   desc "The OCM CLI makes it easy to create component versions and embed them in build processes."
   homepage "https://ocm.software/"
-  version "0.7.0"
+  version "0.8.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.7.0/ocm-0.7.0-darwin-arm64.tar.gz"
-      sha256 "fd2ed5a50887890f8ce972f865c6308e4f9d0bacda71f1d7c28741402312079d"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.8.0/ocm-0.8.0-darwin-arm64.tar.gz"
+      sha256 "ce4262605b0771c0cee67a3e4a2920fd3cd881d9cb220888885939fc14b86a9b"
 
       def install
         bin.install "ocm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.7.0/ocm-0.7.0-darwin-amd64.tar.gz"
-      sha256 "581fba6c731390fa9285db845c5d0a72b9e40a9e9afc5ec53f7220006edcf0cf"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.8.0/ocm-0.8.0-darwin-amd64.tar.gz"
+      sha256 "d1f88d3482be3cd68637ece3b0176622ebd56f16582bf679241b946a2704b421"
 
       def install
         bin.install "ocm"
@@ -28,16 +28,16 @@ class Ocm < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.7.0/ocm-0.7.0-linux-arm64.tar.gz"
-      sha256 "19f40bde16cec284f1d1bcbe3ce09b6587e65f09fa769e66633a59ccaeb42f18"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.8.0/ocm-0.8.0-linux-arm64.tar.gz"
+      sha256 "48586052bfc978880bb83ebb063414c4b511e3c9bc2399700aa7007788435fb0"
 
       def install
         bin.install "ocm"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/open-component-model/ocm/releases/download/v0.7.0/ocm-0.7.0-linux-amd64.tar.gz"
-      sha256 "bc62f84827cf29962e3ef89a1587fc5321e742705fbc24e8df484e8e306b97fd"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.8.0/ocm-0.8.0-linux-amd64.tar.gz"
+      sha256 "19e1036cadf9163ab5a45806df490c22431e098f85d496f750f0bf3034795b90"
 
       def install
         bin.install "ocm"
