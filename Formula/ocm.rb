@@ -5,20 +5,20 @@
 class Ocm < Formula
   desc "The OCM CLI makes it easy to create component versions and embed them in build processes."
   homepage "https://ocm.software/"
-  version "0.12.1"
+  version "0.14.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/open-component-model/ocm/releases/download/v0.12.1/ocm-0.12.1-darwin-amd64.tar.gz"
-      sha256 "d73e655f24be20d10441b566cb872fe3826c02b2b8a797de7de75457277b76f0"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.14.0/ocm-0.14.0-darwin-amd64.tar.gz"
+      sha256 "3ff696c6a38ead61ad8f2bc019a491ec645406e1739bef15f0ed2af5603ff08a"
 
       def install
         bin.install "ocm"
       end
     end
     on_arm do
-      url "https://github.com/open-component-model/ocm/releases/download/v0.12.1/ocm-0.12.1-darwin-arm64.tar.gz"
-      sha256 "9b5c1891e98840ce46ba1f2f54ab8fdd62b311944cfeb2229ad956feafa11b82"
+      url "https://github.com/open-component-model/ocm/releases/download/v0.14.0/ocm-0.14.0-darwin-arm64.tar.gz"
+      sha256 "971256823757485809d08d9b0bfc85e57fa3af08dccd312af6e04989249dfb2a"
 
       def install
         bin.install "ocm"
@@ -29,8 +29,8 @@ class Ocm < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/open-component-model/ocm/releases/download/v0.12.1/ocm-0.12.1-linux-amd64.tar.gz"
-        sha256 "12e72796b780eb6a597d39102c173b12acdf89f6f0ae39bc7b36d66e82e882ef"
+        url "https://github.com/open-component-model/ocm/releases/download/v0.14.0/ocm-0.14.0-linux-amd64.tar.gz"
+        sha256 "a244fc3bcce62efc148a810147eb6d4c25b613ee285d12df1fcac84ef603e992"
 
         def install
           bin.install "ocm"
@@ -39,8 +39,8 @@ class Ocm < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/open-component-model/ocm/releases/download/v0.12.1/ocm-0.12.1-linux-arm64.tar.gz"
-        sha256 "74faf0ce603b07c242acde176ee6d199fc5deaba81f5eade899d263e06190783"
+        url "https://github.com/open-component-model/ocm/releases/download/v0.14.0/ocm-0.14.0-linux-arm64.tar.gz"
+        sha256 "62621babfbaea7ca21321db746542bdebe1d6e83411b0b8a836afc8a4b295c4c"
 
         def install
           bin.install "ocm"
