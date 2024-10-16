@@ -10,7 +10,7 @@ class Ocm < Formula
   on_macos do
     on_intel do
       url "https://github.com/open-component-model/ocm/releases/download/v0.16.0/ocm-0.16.0-darwin-amd64.tar.gz"
-      sha256 "78eb2e957f7c7c5d51424956b205a4566eee463774081220ccad18e463f792e3"
+      sha256 "cc6c5e2fbcf91bbfe5a037f09cfb92fd5a54fa3616ea2ce560fcf8aa30b52403"
 
       def install
         bin.install "ocm"
@@ -18,7 +18,7 @@ class Ocm < Formula
     end
     on_arm do
       url "https://github.com/open-component-model/ocm/releases/download/v0.16.0/ocm-0.16.0-darwin-arm64.tar.gz"
-      sha256 "142291f6f9074952f3e7bae55a596fe96cfc989418100010c1d82fee9f8ebdd4"
+      sha256 "311f13e9355fe2473410fbeeb449346b0dd07b5698e0800ca96dceed07582638"
 
       def install
         bin.install "ocm"
@@ -30,7 +30,7 @@ class Ocm < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/open-component-model/ocm/releases/download/v0.16.0/ocm-0.16.0-linux-amd64.tar.gz"
-        sha256 "accdee58d605430805bf2094896a2a3b58ea751135b54b51e630bbf4c2e24c89"
+        sha256 "53e91d8f4cec79802ff553bb9d65086f79eaabda59b9060df9ef6d3ba0ae6aa9"
 
         def install
           bin.install "ocm"
@@ -40,7 +40,7 @@ class Ocm < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/open-component-model/ocm/releases/download/v0.16.0/ocm-0.16.0-linux-arm64.tar.gz"
-        sha256 "b8348743f207ecd656e568eaa2c5a44487c0b8752572723037cabc340bf3086a"
+        sha256 "10225d6438b56d1f2e1618a8c5a4a13592a3d88f3f763ed109a2f2be6f60f51a"
 
         def install
           bin.install "ocm"
