@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class Ocm < Formula
+class OcmAT0480 < Formula
   desc "The OCM CLI makes it easy to create component versions and embed them in build processes."
   homepage "https://ocm.software/"
   version "0.48.0"
